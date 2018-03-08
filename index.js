@@ -1,4 +1,4 @@
-const faker = require('faker')
+const faker = require('faker') // Generates fake data
 const jwt = require('jwt-simple')
 const moment = require('moment')
 
