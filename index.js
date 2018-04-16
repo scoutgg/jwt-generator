@@ -16,7 +16,6 @@ const payload = {
   aud: 'scout-customer',
   username: user.username,
   role: 'user', // Available roles are ['user', 'admin', 'tester']
-  name: user.name,
   uid: user.id,
   iat: +moment.utc().format('X'),
   exp: +moment.utc().add(1,'hour').format('X'),
