@@ -1,3 +1,7 @@
+/*
+* NODE.JS server side example
+*/
+
 const faker = require('faker') // Generates fake data
 const jwt = require('jwt-simple')
 const moment = require('moment')
@@ -21,4 +25,6 @@ const payload = {
   exp: +moment.utc().add(1,'hour').format('X'),
 }
 
+// PLEASE NOTE THAT THIS ACTION NEEDS TO BE DONE SERVER SIDE,
+// AS EXPOSING THE SECRET WOULD BE A BIG SECURITY CONCERN.
 console.log(jwt.encode(payload, secret))
